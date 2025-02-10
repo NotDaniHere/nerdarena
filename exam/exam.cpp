@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-ifstream fin("pracc.in");
-ofstream fout("pracc.out"); 
+ifstream fin("exam.in");
+ofstream fout("exam.out"); 
 
 int main() {
 

@@ -1,19 +1,17 @@
 #include <bits/stdc++.h>
-
-using namespace std;
+using namespace std;	
 ifstream fin("sume.in");
-ofstream fout("sume.out"); 
-
+ofstream fout("sume.out"); 	
 int main() {
-
-    int a,b; fin >> a >> b;
-    vector<int> numere;
-    for(int i = 0; i < a; i++) {
-        int c; fin >> c;
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int a,b; fin >> a >> b;	
+    vector<int> numere;	
+    for(int i = 0; i < a; i++) {	
+        int c; fin >> c	;
         numere.push_back(c);
     }
     sort(numere.begin(), numere.end(), greater<>());
-
     long long sumapana = 0, sumadupa = 0;
     int counter = 0;
     if(numere[0] < 0) sumapana += numere[0]; 
@@ -24,4 +22,5 @@ int main() {
     }
     fout << sumadupa << endl << sumapana << endl;
     return 0;
+	
 }
