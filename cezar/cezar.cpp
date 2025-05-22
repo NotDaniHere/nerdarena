@@ -1,15 +1,15 @@
-#include <bits/stdc++.h>
+#include <fstream>
 using namespace std;
 ifstream fin("cezar.in");
-ofstream fout("cezar.out"); 
-//N-am idee cum sa dai pe 100pt
+ofstream fout("cezar.out");
+//FINALLY 100 PT
 int main() {
-    string S; getline(fin, S);
-    for(char c: S) {
+    char c; fin >> c;
+    while(!fin.eof()){
       fout << char((c-'a'+1)%26 + 'a');
-      fin >> c;	
+      fin >> c;
     }
 
-	
-    return 0;	
+
+    return 0;
 }
